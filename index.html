@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form action="/predict" method="POST">
+            <label for="male">Male (1 for Yes, 0 for No):</label>
+            <input type="number" name="male" step="any" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" step="any" required><br>
+
+            <label for="education">Education Level (1-4):</label>
+            <input type="number" name="education" step="any" required><br>
+
+            <label for="cigsPerDay">Cigarettes per Day:</label>
+            <input type="number" name="cigsPerDay" step="any" required><br>
+
+            <label for="prevalentStroke">Prevalent Stroke (1 for Yes, 0 for No):</label>
+            <input type="number" name="prevalentStroke" step="any" required><br>
+
+            <label for="prevalentHyp">Prevalent Hypertension (1 for Yes, 0 for No):</label>
+            <input type="number" name="prevalentHyp" step="any" required><br>
+
+            <label for="sysBP">Systolic Blood Pressure:</label>
+            <input type="number" name="sysBP" step="any" required><br>
+
+            <label for="diaBP">Diastolic Blood Pressure:</label>
+            <input type="number" name="diaBP" step="any" required><br>
+
+            <label for="BMI">Body Mass Index (BMI):</label>
+            <input type="number" name="BMI" step="any" required><br>
+
+            <label for="heartRate">Heart Rate:</label>
+            <input type="number" name="heartRate" step="any" required><br>
+
+            <label for="glucose">Glucose Level:</label>
+            <input type="number" name="glucose" step="any" required><br>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
